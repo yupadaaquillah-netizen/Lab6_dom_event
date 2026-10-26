@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum DOM dan Event Handling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <p class="eyebrow">PEMROGRAMAN WEB • PRAKTIKUM 6</p>
+            <h1 id="judul">Latihan JavaScript DOM</h1>
+            <p id="pesan">Belum ada tindakan.</p>
+            <button id="tombolAksi" type="button">Klik Saya</button>
+        </header>
+
+        <section class="panel">
+            <h2>Latihan 3 — Ubah Gaya</h2>
+            <p id="teksGaya">Klik tombol untuk mengubah gaya paragraf ini.</p>
+            <button id="tombolGaya" type="button">Ubah Gaya</button>
+        </section>
+
+        <section class="panel">
+            <h2>Eksperimen 4 — Sembunyikan & Tampilkan Paragraf</h2>
+            <p id="paragrafSembunyi">Paragraf ini dapat disembunyikan dan ditampilkan kembali menggunakan manipulasi class CSS (.tersembunyi).</p>
+            <button id="tombolSembunyi" type="button">Sembunyikan Paragraf</button>
+        </section>
+
+        <section class="panel">
+            <h2>Latihan 4 — Penghitung Karakter</h2>
+            <label for="namaInput">Nama:</label>
+            <input type="text" id="namaInput" maxlength="40" placeholder="Ketik nama di sini">
+            <p>Jumlah karakter: <strong id="jumlahKarakter">0</strong>/40</p>
+        </section>
+
+        <section class="panel">
+            <h2>Latihan 5 — Form Pendaftaran</h2>
+            <form id="formPendaftaran" novalidate>
+                <label for="nama">Nama lengkap</label>
+                <input id="nama" name="nama" type="text" placeholder="Nama lengkap">
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="nama@email.com">
+
+                <label for="usia">Usia</label>
+                <input id="usia" name="usia" type="number" min="17" max="100" placeholder="Minimal 17 tahun">
+
+                <button type="submit">Daftar</button>
+            </form>
+            <p id="pesanForm" aria-live="polite"></p>
+        </section>
+
+        <section class="panel">
+            <h2>Latihan 6 — Daftar Tugas</h2>
+            <label for="inputTugas">Tugas baru</label>
+            <div class="input-row">
+                <input id="inputTugas" type="text" placeholder="Contoh: Kerjakan laporan">
+                <button id="tambahTugas" type="button">Tambah</button>
+            </div>
+            <p id="pesanTugas" aria-live="polite"></p>
+            <ul id="daftarTugas"></ul>
+        </section>
+    </main>
+</body>
+
+</html>

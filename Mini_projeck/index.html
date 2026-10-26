@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mini Project Form Pendaftaran Workshop - Pemrograman Web JavaScript DOM dan Event Handling">
+    <title>Pendaftaran Workshop Web Development 2026</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <main class="layout">
+            <section class="intro-section">
+                <div class="tag-badge">
+                    <span class="pulse-dot"></span>
+                    WORKSHOP TEKNOLOGI 2026
+                </div>
+
+                <h1 class="main-title">Kuasai Web Modern dengan <span class="gradient-text">JavaScript DOM</span></h1>
+
+                <p class="intro-desc">
+                    Tingkatkan skill coding Anda dari dasar hingga mahir. Pelajari manipulasi elemen HTML, event
+                    listener, dan pembuatan antarmuka web interaktif yang responsif.
+                </p>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <span class="benefit-icon">⚡</span>
+                        <div>
+                            <h4>Hands-on & Real Project</h4>
+                            <p>Praktik langsung membuat komponen interaktif modern.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">🎓</span>
+                        <div>
+                            <h4>Sertifikat Resmi</h4>
+                            <p>Mendukung portofolio dan nilai praktikum kuliah.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-card">
+                        <span class="benefit-icon">💬</span>
+                        <div>
+                            <h4>Mentoring & Diskusi</h4>
+                            <p>Tanya jawab langsung dengan praktisi web developer.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">📅 Tanggal</span>
+                        <strong class="meta-val">Sabtu, 28 November 2026</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">📍 Platform</span>
+                        <strong class="meta-val">Zoom & Live Coding Room</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">🎟️ Kuota</span>
+                        <strong class="meta-val">Terbatas (50 Peserta)</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2>Formulir Pendaftaran</h2>
+                        <p class="subtitle">Lengkapi formulir di bawah ini dengan data yang valid.</p>
+                    </div>
+
+                    <form id="formWorkshop" novalidate>
+                        <div class="form-group" id="group-nama">
+                            <div class="label-row">
+                                <label for="nama">Nama Lengkap <span class="required">*</span></label>
+                                <span id="hitungNama" class="char-counter">0 / 60 karakter</span>
+                            </div>
+                            <div class="input-wrapper">
+                                <input id="nama" name="nama" type="text" maxlength="60"
+                                    placeholder="Contoh: Muhammad Fadil" autocomplete="name">
+                            </div>
+                            <span class="field-feedback" id="feedback-nama"></span>
+                        </div>
+
+                        <div class="form-group" id="group-email">
+                            <div class="label-row">
+                                <label for="email">Alamat Email <span class="required">*</span></label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input id="email" name="email" type="email" placeholder="Contoh: nama@domain.com"
+                                    autocomplete="email">
+                            </div>
+                            <span class="field-feedback" id="feedback-email"></span>
+                        </div>
+
+                        <div class="form-group" id="group-sesi">
+                            <div class="label-row">
+                                <label for="sesi">Pilihan Sesi Workshop <span class="required">*</span></label>
+                            </div>
+                            <div class="select-wrapper">
+                                <select id="sesi" name="sesi">
+                                    <option value="">-- Pilih Jadwal Sesi --</option>
+                                    <option value="Sesi Pagi (09.00 - 11.30 WIB)">Sesi Pagi (09.00 - 11.30 WIB) — DOM &
+                                        Selektor</option>
+                                    <option value="Sesi Siang (13.00 - 15.30 WIB)">Sesi Siang (13.00 - 15.30 WIB) —
+                                        Event Handling & Form</option>
+                                    <option value="Sesi Malam (19.00 - 21.30 WIB)">Sesi Malam (19.00 - 21.30 WIB) — Mini
+                                        Project Interaktif</option>
+                                </select>
+                            </div>
+                            <div id="infoSesi" class="session-badge hint-text">
+                                Silakan tentukan sesi yang cocok dengan jadwal Anda.
+                            </div>
+                        </div>
+
+                        <div class="live-summary-card">
+                            <div class="summary-header">
+                                <span class="summary-icon">📋</span>
+                                <div>
+                                    <h3>Ringkasan Input Langsung</h3>
+                                    <p class="summary-caption">Terupdate secara real-time saat Anda mengetik</p>
+                                </div>
+                            </div>
+                            <div class="summary-content">
+                                <div class="summary-row">
+                                    <span class="summary-label">Nama Lengkap</span>
+                                    <strong id="ringkasanNama" class="summary-val">-</strong>
+                                </div>
+                                <div class="summary-row">
+                                    <span class="summary-label">Alamat Email</span>
+                                    <strong id="ringkasanEmail" class="summary-val">-</strong>
+                                </div>
+                                <div class="summary-row">
+                                    <span class="summary-label">Sesi Terpilih</span>
+                                    <strong id="ringkasanSesi" class="summary-val">-</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="pesan" class="alert-message" aria-live="polite"></div>
+
+                        <div class="form-actions">
+                            <button type="submit" id="tombolSubmit" class="btn btn-primary">
+                                <span>Daftar Sekarang</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+                            <button type="reset" id="tombolReset" class="btn btn-secondary">
+                                <span>Reset Form</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>© 2026 Mini Project Pemrograman Web • Modul Praktikum JavaScript DOM & Event Handling</p>
+        </footer>
+    </div>
+</body>
+
+</html>
