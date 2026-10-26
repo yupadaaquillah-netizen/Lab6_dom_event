@@ -3,7 +3,7 @@
 > **Mata Kuliah:** Pemrograman Web  
 > **Topik:** Document Object Model (DOM) & Event Handling  
 > **Repository:** `Lab6Web`  
-> **Mahasiswa:** Afdal *(Silakan lengkapi NIM & Kelas)*  
+> **Mahasiswa:** aquillah *(Silakan lengkapi NIM & Kelas)*  
 
 ---
 
@@ -118,10 +118,10 @@ Berikut adalah matriks pengujian validasi input pada Mini Project Form Pendaftar
 |:---:|:---|:---|:---|:---:|
 | **TC-01** | Form dikirim dalam keadaan kosong | Nama: `""`<br>Email: `""`<br>Sesi: `""` | Muncul pesan error: *"Nama lengkap wajib diisi."*, border input nama berubah merah, kursor fokus ke input nama. | **LULUS (Valid)** |
 | **TC-02** | Nama kurang dari 3 karakter | Nama: `"Al"`<br>Email: `"al@gmail.com"`<br>Sesi: `"Sesi Pagi"` | Muncul pesan error: *"Nama lengkap minimal terdiri dari 3 karakter."*, feedback error di bawah input nama. | **LULUS (Valid)** |
-| **TC-03** | Format email tidak valid (tanpa `@`) | Nama: `"Afdal Pratama"`<br>Email: `"afdalpratama.com"`<br>Sesi: `"Sesi Pagi"` | Muncul pesan error: *"Format email tidak valid (contoh: nama@domain.com)."*, input email disorot merah. | **LULUS (Valid)** |
-| **TC-04** | Format email tanpa domain | Nama: `"Afdal Pratama"`<br>Email: `"afdal@"`<br>Sesi: `"Sesi Pagi"` | Muncul pesan error format email tidak valid, pengiriman dibatalkan. | **LULUS (Valid)** |
-| **TC-05** | Sesi workshop belum dipilih | Nama: `"Afdal Pratama"`<br>Email: `"afdal@gmail.com"`<br>Sesi: `""` (*-- Pilih Jadwal Sesi --*) | Muncul pesan error: *"Silakan pilih sesi workshop yang tersedia."*, dropdown disorot merah. | **LULUS (Valid)** |
-| **TC-06** | Seluruh data diisi dengan benar & valid | Nama: `"Afdal Pratama"`<br>Email: `"afdal@kampus.ac.id"`<br>Sesi: `"Sesi Siang (13.00 - 15.30 WIB)"` | Muncul kotak alert sukses hijau: *"Pendaftaran Workshop Berhasil!"*, nama dan sesi terkonfirmasi di layar. | **LULUS (Valid)** |
+| **TC-03** | Format email tidak valid (tanpa `@`) | Nama: `"aquillah Pratama"`<br>Email: `"aquillahpratama.com"`<br>Sesi: `"Sesi Pagi"` | Muncul pesan error: *"Format email tidak valid (contoh: nama@domain.com)."*, input email disorot merah. | **LULUS (Valid)** |
+| **TC-04** | Format email tanpa domain | Nama: `"aquillah Pratama"`<br>Email: `"aquillah@"`<br>Sesi: `"Sesi Pagi"` | Muncul pesan error format email tidak valid, pengiriman dibatalkan. | **LULUS (Valid)** |
+| **TC-05** | Sesi workshop belum dipilih | Nama: `"aquillah Pratama"`<br>Email: `"aquillah@gmail.com"`<br>Sesi: `""` (*-- Pilih Jadwal Sesi --*) | Muncul pesan error: *"Silakan pilih sesi workshop yang tersedia."*, dropdown disorot merah. | **LULUS (Valid)** |
+| **TC-06** | Seluruh data diisi dengan benar & valid | Nama: `"aquillah Pratama"`<br>Email: `"aquillah@kampus.ac.id"`<br>Sesi: `"Sesi Siang (13.00 - 15.30 WIB)"` | Muncul kotak alert sukses hijau: *"Pendaftaran Workshop Berhasil!"*, nama dan sesi terkonfirmasi di layar. | **LULUS (Valid)** |
 | **TC-07** | Pengujian tombol Reset | Input terisi data, lalu klik tombol **Reset Form** | Semua field terhapus, counter nama kembali ke `0 / 60`, ringkasan kembali ke `-`, alert pesan tersembunyi. | **LULUS (Valid)** |
 
 ---
